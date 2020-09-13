@@ -9,9 +9,14 @@ const pizzaPrice = 80;
 //test
 //console.log(`Test if connection HTML-JS works: ${vegetarian}, ${hawaiian} and ${pepperoni}`);
 
-alert(`Welcome, customer! Happy to serve your pizza. On our menu we have: ${vegetarian}, ${hawaiian} and ${pepperoni}`);
+// alert(`Welcome, customer! Happy to serve your pizza. On our menu we have: ${vegetarian}, ${hawaiian} and ${pepperoni}`);
+document.getElementById("welcomeMessage").innerHTML = `Welcome, customer! Happy to serve your pizza. On our menu today we have: ${vegetarian}, ${hawaiian} and ${pepperoni}.`
 
-const orderName = prompt(`Enter the name of the pizza you want to order today:`);
+
+// const orderName = prompt(`Enter the name of the pizza you want to order today:`);
+document.getElementById("selectPizza").innerHTML = `Enter the name of the pizza you want to order:`;
+
+const orderName = document.getElementById("orderName").value;
 
 //Function that tests whether the user input matches the pizza name
 const validateOrderName = (orderName) => {

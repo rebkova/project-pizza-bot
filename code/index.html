@@ -18,8 +18,22 @@
       </div>
     </div>
     <div class="container">
-      <div class="box">
-          <p id="orderSummary"></p>
+      <div class="welcome-box">
+        <p id="welcomeMessage"></p>
+      </div>
+      <button onclick="displayOrderBox()">Continue</button>
+
+      <div class="order-box">
+        <form>
+          <label for="orderName">
+            <p id="selectPizza"></p>
+          </label>
+          <input id="orderName" name="numpizzas" type="text"/> 
+        </form>
+      </div>
+
+      <div class="order-summary">
+        <p id="orderSummary"></p>
       </div>
     </div>
     
