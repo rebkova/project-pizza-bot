@@ -48,10 +48,6 @@
     border: 1px solid blue;
   }
 
-  /* .container :nth-child(2) {
-    display: none;
-  } */
-  
  .welcome-box, .order-box {
     padding: 25px;
     margin-top: 20px;
@@ -64,6 +60,10 @@
 
   .order-box {
     display: none;
+  }
+
+  .order-box-open {
+    display: block;
   }
 
   .welcome-box, .order-box p {

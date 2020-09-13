@@ -12,6 +12,13 @@ const pizzaPrice = 80;
 // alert(`Welcome, customer! Happy to serve your pizza. On our menu we have: ${vegetarian}, ${hawaiian} and ${pepperoni}`);
 document.getElementById("welcomeMessage").innerHTML = `Welcome, customer! Happy to serve your pizza. On our menu today we have: ${vegetarian}, ${hawaiian} and ${pepperoni}.`
 
+//on button click, invoke the function and display order-box
+const displayOrderBox = () => {
+    const orderBox = document.getElementById("orderBox");
+    orderBox.classList.add("order-box-open")
+
+};
+
 
 // const orderName = prompt(`Enter the name of the pizza you want to order today:`);
 document.getElementById("selectPizza").innerHTML = `Enter the name of the pizza you want to order:`;
