@@ -47,6 +47,7 @@ if (validateOrderName(orderName)) {
 }
 else {
     alert(`Select a pizza from the menu.`);
+    
 }
 
 var cookingTime;
